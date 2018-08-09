@@ -2,11 +2,18 @@ language: node_js
 node_js:
   - node
 script: yarn test && yarn build
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN # Set in travis-ci.org dashboard, marked secure
-  keep-history: true
-  on:
-    branch: master
-  local-dir: build
+
+jobs:
+  include:
+    - stage: test
+    - script: yarn test
+    - stage: build and deploy
+    - script: yarn build
+    - deploy:
+        provider: pages
+        skip-cleanup: true
+        github-token: $GITHUB_TOKEN # Set in travis-ci.org dashboard, marked secure
+        keep-history: true
+        on:
+          branch: master
+        local-dir: build
