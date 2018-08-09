@@ -12,7 +12,7 @@ class App extends Component {
         </header>
         <p className="App-intro">
           This page is under development, PRs are welcome on{" "}
-          <a href="https://github.com/wiredmonash/react-welcome">GitHub</a>
+          <a href="https://github.com/wiredmonash/react-welcome">GitHub</a>.
         </p>
       </div>
     );
