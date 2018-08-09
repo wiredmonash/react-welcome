@@ -11,10 +11,8 @@ class App extends Component {
           <h1>Welcome to WIRED</h1>
         </header>
         <p className="foreword">
-          <marquee>
-            WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED
-            WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED
-          </marquee>
+          WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED
+          WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED WIRED
         </p>
 
         <p className="foreword">
