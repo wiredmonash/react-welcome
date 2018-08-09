@@ -1,15 +1,19 @@
 language: node_js
 node_js:
   - node
-script: yarn test && yarn build
 
 jobs:
   include:
     - stage: test
-    - script: yarn test
-    - stage: build and deploy
-    - script: yarn build
-    - deploy:
+      name: "Test"
+      script: yarn test
+    - name: "Build"
+      script: yarn build
+
+    - stage: deploy
+      name: "Build and Deploy"
+      script: yarn build
+      deploy:
         provider: pages
         skip-cleanup: true
         github-token: $GITHUB_TOKEN # Set in travis-ci.org dashboard, marked secure
