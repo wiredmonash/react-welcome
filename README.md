@@ -4,4 +4,4 @@
 
 A simple welcoming page built in React
 
-Hello WIRED!
+[Hello WIRED!]( http://wired.org.au/react-welcome/)
