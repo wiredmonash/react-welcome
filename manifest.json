@@ -1,0 +1,8 @@
+{
+  "short_name": "WIRED Monash",
+  "name": "The Monash University IT Students Society",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#6d2a7d",
+  "background_color": "#ffffff"
+}
