@@ -2,20 +2,17 @@ language: node_js
 node_js:
   - node
 
-stages:
-  - test
-  - deploy
-
 jobs:
   include:
     - stage: test
-    - script: yarn test
-    - script: yarn build
-    - name: "Test"
+      name: "Test"
+      script: yarn test
+    - name: "Build"
+      script: yarn build
 
     - stage: deploy
-    - name: "Build and Deploy"
-    - script: yarn build
+      name: "Build and Deploy"
+      script: yarn build
       deploy:
         provider: pages
         skip-cleanup: true
